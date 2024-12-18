@@ -124,9 +124,3 @@ osl.log
 /workspace
 
 *processed.xml
-
-# Custom dirs and files #
-docs/source/notebooks_internal/
-myosuite/agents/nohup.out
-myosuite/agents/outputs
-**/checkpoints/
