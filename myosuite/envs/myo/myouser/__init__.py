@@ -62,7 +62,7 @@ print("MyoSuite:> Registering MyoUser Envs")
 # UitB LLC (direct UitB compatibility test)  ==============================
 _register(id='myoarm_llc_eepos_pointing_adaptive_v101-v0',
         entry_point='myosuite.envs.myo.myouser.myoarm_llc_eepos_pointing_adaptive_v101__simulator:Simulator',
-        max_episode_steps=800,  #200,
+        max_episode_steps=80,  #200,
         kwargs={
             'simulator_folder': curr_dir+'/myoarm_llc_eepos_pointing_adaptive_v101/',
         #     'model_path': curr_dir+'/../../../simhive/myo_sim/finger/motorfinger_v0.xml',
@@ -76,7 +76,7 @@ _register(id='myoarm_llc_eepos_pointing_adaptive_v101-v0',
 # UitB LLC (reimplementation) ==============================
 register_env_with_variants(id='myoElbow_llc_eepos_adaptive-v0',
         entry_point='myosuite.envs.myo.myouser.llc_eepos_adaptive_v0:LLCEEPosAdaptiveEnvV0',
-        max_episode_steps=800,  #100,
+        max_episode_steps=80,  #100,
         kwargs={
             'model_path': curr_dir+'/../assets/elbow/myoelbow_1dof6muscles.xml',
             'target_pos_range': {'wrist': ((-0.3, -0.35, -0.3), (0.1, -0.225, 0.4)),},
@@ -96,7 +96,7 @@ register_env_with_variants(id='myoElbow_llc_eepos_adaptive-v0',
 
 register_env_with_variants(id='myoArm_llc_eepos_adaptive-v0',
         entry_point='myosuite.envs.myo.myouser.llc_eepos_adaptive_v0:LLCEEPosAdaptiveEnvV0',
-        max_episode_steps=800,  #100,
+        max_episode_steps=80,  #100,
         kwargs={
             'model_path': curr_dir+'/../assets/arm/myoarm_pose.xml',
             'target_pos_range': {'IFtip': ((-0.3, -0.35, -0.3), (0.1, -0.225, 0.4)),},
@@ -116,7 +116,7 @@ register_env_with_variants(id='myoArm_llc_eepos_adaptive-v0',
 
 register_env_with_variants(id='mobl_arms_index_llc_eepos_adaptive-v0',
         entry_point='myosuite.envs.myo.myouser.llc_eepos_adaptive_v0:LLCEEPosAdaptiveEnvV0',
-        max_episode_steps=800,  #100,
+        max_episode_steps=80,  #100,
         kwargs={
             'model_path': curr_dir+'/../../../simhive/uitb_sim/mobl_arms_index_llc_eepos_pointing.xml',
             'target_pos_range': {'fingertip': ((0.225, -0.3, -0.3), (0.35, 0.1, 0.4)),},
